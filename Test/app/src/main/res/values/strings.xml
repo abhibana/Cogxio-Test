@@ -1,10 +1,9 @@
 <resources>
     <string name="app_name">Snowy</string>
-    <string name="action_settings">Settings</string>
 
     <string-array name="tab_names">
         <item>Welcome</item>
         <item>Get Snowy</item>
-        <item>Find Yourself</item>
+        <item>Locate</item>
     </string-array>
 </resources>
