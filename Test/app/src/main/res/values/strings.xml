@@ -12,4 +12,15 @@
         Let\'s not be afraid to receive each day\'s surprise, whether it comes to us as sorrow or as joy It will open a new place in our hearts,
         a place where we can welcome new friends and celebrate more fully our shared humanity.\"
     </string>
+
+    <string name="price">Price : </string>
+    <string name="size">Size : </string>
+    <string name="colour">Colour : </string>
+    <string name="no_data">Sorry!! we don\'t have any feeds yet.</string>
+    <string name="unable_to_get_location">Sorry !! We are unable to find your location.</string>
+    <string name="location_marker_title">You\'re here</string>
+
+     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyAw7UFicFVkChVYxQCQqB0RG2FhNPAwxZY
+    </string>
 </resources>
