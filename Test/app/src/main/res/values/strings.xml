@@ -16,7 +16,9 @@
     <string name="price">Price : </string>
     <string name="size">Size : </string>
     <string name="colour">Colour : </string>
+    <string name="no_network">Please turn on your wifi/data pack.</string>
     <string name="no_data">Sorry!! we don\'t have any feeds yet.</string>
+    <string name="api_error">Oops !! Something wrong happened. Please Try again later.</string>
     <string name="unable_to_get_location">Sorry !! We are unable to find your location.</string>
     <string name="location_marker_title">You\'re here</string>
     <string name="create">Create</string>

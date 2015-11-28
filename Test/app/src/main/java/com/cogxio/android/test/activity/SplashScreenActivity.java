@@ -1,9 +1,9 @@
 package com.cogxio.android.test.activity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.Toast;
 
 import com.cogxio.android.test.R;
 import com.cogxio.android.test.network.request.GetSnowyResultsRequest;
@@ -21,20 +21,19 @@ public class SplashScreenActivity extends SnowyBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        final int SPLASH_DURATION = 1500;
+        final int SPLASH_DURATION = 1000;
 
         if(NetworkUtils.isConnectedToNet(this)){
             fetchSnowyResults();
+        }else{
+            Toast.makeText(this,getString(R.string.no_network),Toast.LENGTH_SHORT).show();
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    finish();
+                }
+            }, SPLASH_DURATION);
         }
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(SplashScreenActivity.this,MainActivity.class));
-                finish();
-                overridePendingTransition(R.anim.fab_out, R.anim.fab_in);
-            }
-        },SPLASH_DURATION);
     }
 
     private void fetchSnowyResults(){
