@@ -6,4 +6,10 @@
         <item>Get Snowy</item>
         <item>Locate</item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="welcome_quote">\"Each day holds a surprise. But only if we expect it can we see, hear, or feel it when it comes to us.
+        Let\'s not be afraid to receive each day\'s surprise, whether it comes to us as sorrow or as joy It will open a new place in our hearts,
+        a place where we can welcome new friends and celebrate more fully our shared humanity.\"
+    </string>
 </resources>

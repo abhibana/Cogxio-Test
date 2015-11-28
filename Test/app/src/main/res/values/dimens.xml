@@ -7,4 +7,13 @@
     <!--Splash Screen Dimensions-->
     <dimen name="app_name_text_size">36sp</dimen>
     <dimen name="app_logo_height_and_width">56dp</dimen>
+
+    <!--Welcome Page Dimensions-->
+    <dimen name="welcome_quote_margin">24dp</dimen>
+    <dimen name="welcome_quote_text_size">20sp</dimen>
+    <dimen name="welcome_image_margin">8dp</dimen>
+    <dimen name="welcome_image_height_and_width">144dp</dimen>
+
+    <!--Map Page Dimensions-->
+    <dimen name="map_margin">8dp</dimen>
 </resources>

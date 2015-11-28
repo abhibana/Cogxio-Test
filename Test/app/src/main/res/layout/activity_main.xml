@@ -12,4 +12,12 @@
         app:tabMode="fixed"
         app:tabGravity="fill"/>
 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/snowy_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/snowy_tl">
+
+    </android.support.v4.view.ViewPager>
+
 </RelativeLayout>
