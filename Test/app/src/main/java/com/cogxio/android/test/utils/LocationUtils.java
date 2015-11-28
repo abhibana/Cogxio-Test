@@ -3,7 +3,6 @@ package com.cogxio.android.test.utils;
 import android.content.Context;
 import android.location.Location;
 import android.location.LocationManager;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.cogxio.android.test.R;
@@ -36,7 +35,6 @@ public class LocationUtils {
     private static LatLng getLocation(Location location){
 
         if(location != null){
-            Log.e(String.valueOf(location.getLatitude()),String.valueOf(location.getLongitude()));
             return new LatLng(location.getLatitude(),location.getLongitude());
         }else{
             return new LatLng(BANGALORE_LATITUDE,BANGALORE_LONGITUDE);

@@ -19,6 +19,9 @@
     <string name="no_data">Sorry!! we don\'t have any feeds yet.</string>
     <string name="unable_to_get_location">Sorry !! We are unable to find your location.</string>
     <string name="location_marker_title">You\'re here</string>
+    <string name="create">Create</string>
+    <string name="delete">Delete</string>
+    <string name="send">Send</string>
 
      <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
         AIzaSyAw7UFicFVkChVYxQCQqB0RG2FhNPAwxZY

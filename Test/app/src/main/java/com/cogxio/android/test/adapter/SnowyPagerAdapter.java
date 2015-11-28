@@ -1,10 +1,11 @@
 package com.cogxio.android.test.adapter;
 
-import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.cogxio.android.test.activity.MainActivity;
+import com.cogxio.android.test.fragment.GetSnowyFragment;
 import com.cogxio.android.test.fragment.LocateInMapFragment;
 import com.cogxio.android.test.fragment.WelcomeFragment;
 
@@ -13,21 +14,25 @@ import com.cogxio.android.test.fragment.WelcomeFragment;
  */
 public class SnowyPagerAdapter extends FragmentPagerAdapter {
 
-    private Context context;
     private int pagerSize;
+    private MainActivity mainActivity;
 
-    public SnowyPagerAdapter(Context context,FragmentManager fragmentManager,int pagerSize){
+    public SnowyPagerAdapter(MainActivity mainActivity,FragmentManager fragmentManager,int pagerSize){
         super(fragmentManager);
-        this.context = context;
+        this.mainActivity = mainActivity;
         this.pagerSize = pagerSize;
     }
 
     @Override
     public Fragment getItem(int position) {
+
         if(position == 0){
             return new WelcomeFragment();
+        }else if(position == 1){
+            return new GetSnowyFragment();
+        }else {
+            return new LocateInMapFragment();
         }
-        return new LocateInMapFragment();
     }
 
     @Override

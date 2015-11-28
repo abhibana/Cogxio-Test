@@ -16,4 +16,15 @@
 
     <!--Map Page Dimensions-->
     <dimen name="map_margin">8dp</dimen>
+
+    <!--Get Snowy Page Dimensions-->
+    <dimen name="result_image_height_and_width">120dp</dimen>
+    <dimen name="result_details_holder_margin">12dp</dimen>
+    <dimen name="result_details_individual_element_margin">4dp</dimen>
+    <dimen name="name_text_size">24sp</dimen>
+    <dimen name="single_result_row_padding">16dp</dimen>
+    <dimen name="common_text_size">16sp</dimen>
+    <dimen name="result_card_height">320dp</dimen>
+    <dimen name="card_view_radius">8dp</dimen>
+    <dimen name="card_view_margin">8dp</dimen>
 </resources>

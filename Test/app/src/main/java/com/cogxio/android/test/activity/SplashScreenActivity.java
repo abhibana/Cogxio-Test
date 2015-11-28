@@ -4,22 +4,28 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 
 import com.cogxio.android.test.R;
+import com.cogxio.android.test.network.request.GetSnowyResultsRequest;
+import com.cogxio.android.test.network.request.listener.GetSnowyResultsRequestListener;
+import com.cogxio.android.test.utils.NetworkUtils;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * Created by Abhishek on 28/11/15.
  */
-public class SplashScreenActivity extends AppCompatActivity {
+public class SplashScreenActivity extends SnowyBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         final int SPLASH_DURATION = 1500;
+
+        if(NetworkUtils.isConnectedToNet(this)){
+            fetchSnowyResults();
+        }
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -29,6 +35,12 @@ public class SplashScreenActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.fab_out, R.anim.fab_in);
             }
         },SPLASH_DURATION);
+    }
+
+    private void fetchSnowyResults(){
+
+        GetSnowyResultsRequest getSnowyResultsRequest = new GetSnowyResultsRequest();
+        getSnowySpiceManager().execute(getSnowyResultsRequest,new GetSnowyResultsRequestListener(this));
     }
 
     @Override

@@ -17,11 +17,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-//    packagingOptions {
-//        exclude 'Strings.properties'
-//        exclude 'META-INF/LICENSE.txt'
-//        exclude 'META-INF/NOTICE.txt'
-//    }
+
+    packagingOptions {
+        exclude 'Strings.properties'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
 }
 
 dependencies {
@@ -29,7 +30,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:design:22.2.1'
     compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.android.support:cardview-v7:22.2.1'
     compile 'uk.co.chrisjenx:calligraphy:2.1.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.octo.android.robospice:robospice-retrofit:1.4.14'
     compile 'com.google.android.gms:play-services:8.1.0'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
 }
