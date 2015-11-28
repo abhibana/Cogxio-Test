@@ -4,7 +4,9 @@ import android.content.Context;
 import android.location.Location;
 import android.location.LocationManager;
 import android.util.Log;
+import android.widget.Toast;
 
+import com.cogxio.android.test.R;
 import com.google.android.gms.maps.model.LatLng;
 
 /**
@@ -26,6 +28,7 @@ public class LocationUtils {
             return getLocation(locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER));
 
         }else {
+            Toast.makeText(context,context.getString(R.string.unable_to_get_location),Toast.LENGTH_SHORT).show();
             return getLocation(null);
         }
     }
